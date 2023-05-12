@@ -20,7 +20,7 @@ const Home = () => {
             </h1>
             <div className="mt-4 text-text text-lg flex items-center flex-col">
               <div className="max-w-3xl">
-                <p className="text-text">
+                <p className="text-text text-center">
                   Software Engineer living in{" "}
                   <a
                     href="https://en.wikipedia.org/wiki/Bandung"

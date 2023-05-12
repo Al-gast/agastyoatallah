@@ -3,15 +3,15 @@ import { Link } from "react-router-dom"
 
 const ProjectCard = (props) => {
   return (
-    <div className="bg-surface0 flex lg:p-8 p-4 rounded-lg items-center side-project gap-8 flex-1">
+    <div className="bg-[#2C3333] flex lg:p-8 p-4 rounded-lg items-center side-project gap-8 flex-1">
       <div className="flex-1 w-1/2">
-        <h2 className="text-lavender text-2xl font-bold">{props.title}</h2>
+        <h2 className="text-[#7DB9B6] text-2xl font-bold">{props.title}</h2>
         <div className="mb-4 mt-2">
           <p className="text-text">{props.desc}</p>
         </div>
         <Link
           to={props.url}
-          className="inline-flex items-center gap-3 rounded-lg bg-lavender opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-surface0 transition-all hover:opacity-100 active:scale-95 active:transform-none"
+          className="inline-flex items-center gap-3 rounded-lg bg-[#0E8388] opacity-95 py-3 px-5 text-sm leading-5 font-semibold text-surface0 transition-all hover:opacity-100 active:scale-95 active:transform-none"
           target="_blank"
           rel="noopener noreferrer"
         >

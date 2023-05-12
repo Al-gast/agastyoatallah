@@ -14,44 +14,44 @@ const Project = () => {
     {
       title: "Pintek",
       desc: "Pintek is a financial innovation company whose mission is to drive the transformation of education through financial service innovation and is committed to enabling the education ecosystem to develop sustainably.",
-      url: "https://pintek.id",
+      url: "https://agastyoatallah-bandung.vercel.app/",
       imgUrl:
         "https://media.discordapp.net/attachments/917983285370572821/1027057257327898744/Screen_Shot_2022-09-08_at_16.28.18.webp",
     },
-    {
-      title: "Ayoconnect",
-      desc: "Established in 2016, Ayoconnect is now Southeast Asia's largest Open Finance API platform. We provide full-stack API solutions, powering the leading companies of today and the tech unicorns of tomorrow.",
-      url: "https://ayoconnect.com/",
-      imgUrl:
-        "https://media.discordapp.net/attachments/917983285370572821/1087197360100225104/Screenshot_2023-03-20_091039.webp?",
-    },
-    {
-      title: "Nichol+ Hotstar",
-      desc: "Nichol+ Hotstar is actually a website that duplicate the looks from Disney+ Hotstar, using React.JS and TailwindCSS. I trained to consume API from TmdbAPI.",
-      url: "https://nichol-hotstar.vercel.app",
-      imgUrl:
-        "https://media.discordapp.net/attachments/917983285370572821/1027057257789280296/Screen_Shot_2022-09-26_at_15.54.02.webp",
-    },
-    {
-      title: "Weather App",
-      desc: "Weather App that using OpenWeatherMap API and ReactJS with TailwindCSS. Also using Catppuccin's 'Mocha' Theme :3",
-      url: "https://weather-kangnikol.vercel.app/",
-      imgUrl:
-        "https://media.discordapp.net/attachments/917983285370572821/1087197359815000074/Screenshot_2023-03-20_091106.webp",
-    },
-    {
-      title: "Startpage",
-      desc: "This Startpage is built with somebody else, using Rosé Pine Theme and hosted to Vercel. it searched to Gowogle engine",
-      url: "https://startpage-kangnikol.vercel.app/",
-      imgUrl:
-        "https://media.discordapp.net/attachments/917983285370572821/1027058349486903347/Screen_Shot_2022-09-28_at_11.17.53.webp",
-    },
+    // {
+    //   title: "Ayoconnect",
+    //   desc: "Established in 2016, Ayoconnect is now Southeast Asia's largest Open Finance API platform. We provide full-stack API solutions, powering the leading companies of today and the tech unicorns of tomorrow.",
+    //   url: "https://ayoconnect.com/",
+    //   imgUrl:
+    //     "https://media.discordapp.net/attachments/917983285370572821/1087197360100225104/Screenshot_2023-03-20_091039.webp?",
+    // },
+    // {
+    //   title: "Nichol+ Hotstar",
+    //   desc: "Nichol+ Hotstar is actually a website that duplicate the looks from Disney+ Hotstar, using React.JS and TailwindCSS. I trained to consume API from TmdbAPI.",
+    //   url: "https://nichol-hotstar.vercel.app",
+    //   imgUrl:
+    //     "https://media.discordapp.net/attachments/917983285370572821/1027057257789280296/Screen_Shot_2022-09-26_at_15.54.02.webp",
+    // },
+    // {
+    //   title: "Weather App",
+    //   desc: "Weather App that using OpenWeatherMap API and ReactJS with TailwindCSS. Also using Catppuccin's 'Mocha' Theme :3",
+    //   url: "https://weather-kangnikol.vercel.app/",
+    //   imgUrl:
+    //     "https://media.discordapp.net/attachments/917983285370572821/1087197359815000074/Screenshot_2023-03-20_091106.webp",
+    // },
+    // {
+    //   title: "Startpage",
+    //   desc: "This Startpage is built with somebody else, using Rosé Pine Theme and hosted to Vercel. it searched to Gowogle engine",
+    //   url: "https://startpage-kangnikol.vercel.app/",
+    //   imgUrl:
+    //     "https://media.discordapp.net/attachments/917983285370572821/1027058349486903347/Screen_Shot_2022-09-28_at_11.17.53.webp",
+    // },
   ]
   return (
     <div className="flex flex-col">
       <main className="flex-1 mt-12 px-4 max-w-5xl mx-auto">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-lavender text-4xl font-black my-4 border-b border-overlay0 py-4">
+          <h1 className="text-[#7DB9B6] text-4xl font-black my-4 border-b border-overlay0 py-4">
             Projects!
           </h1>
         </div>
