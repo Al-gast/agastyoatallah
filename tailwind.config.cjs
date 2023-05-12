@@ -7,6 +7,6 @@ module.exports = {
         text: '#CBE4DE'
       }
     },
-    darkMode: false,
+    darkMode: 'class',
   },
 }
