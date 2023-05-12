@@ -11,7 +11,7 @@ const Footer = () => {
         />
       </div>
       <footer className="text-white px-4 max-w-3xl w-full flex justify-between mx-auto items-center mb-12">
-        <div className="opacity-50 text-subtext0">© Nicholas Alvi S, 2023</div>
+        <div className="opacity-50 text-subtext0">© Agastyo Atallah Al-ardhi, 2023</div>
         <Modal />
       </footer>
     </>
