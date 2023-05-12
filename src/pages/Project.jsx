@@ -18,13 +18,13 @@ const Project = () => {
       imgUrl:
         "https://media.discordapp.net/attachments/917983285370572821/1027057257327898744/Screen_Shot_2022-09-08_at_16.28.18.webp",
     },
-    // {
-    //   title: "Ayoconnect",
-    //   desc: "Established in 2016, Ayoconnect is now Southeast Asia's largest Open Finance API platform. We provide full-stack API solutions, powering the leading companies of today and the tech unicorns of tomorrow.",
-    //   url: "https://ayoconnect.com/",
-    //   imgUrl:
-    //     "https://media.discordapp.net/attachments/917983285370572821/1087197360100225104/Screenshot_2023-03-20_091039.webp?",
-    // },
+    {
+      title: "Ayoconnect",
+      desc: "Established in 2016, Ayoconnect is now Southeast Asia's largest Open Finance API platform. We provide full-stack API solutions, powering the leading companies of today and the tech unicorns of tomorrow.",
+      url: "https://agastyoatallah-quiz-app.vercel.app/",
+      imgUrl:
+        "https://media.discordapp.net/attachments/917983285370572821/1087197360100225104/Screenshot_2023-03-20_091039.webp?",
+    },
     // {
     //   title: "Nichol+ Hotstar",
     //   desc: "Nichol+ Hotstar is actually a website that duplicate the looks from Disney+ Hotstar, using React.JS and TailwindCSS. I trained to consume API from TmdbAPI.",
