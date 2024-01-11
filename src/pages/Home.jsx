@@ -9,9 +9,8 @@ const Home = () => {
             <div className="flex justify-center">
               <div className="w-36 photo relative">
                 <img
-                  src="https://pps.whatsapp.net/v/t61.24694-24/323972079_137382849220002_1551560675514726992_n.jpg?ccb=11-4&oh=01_AdQVFYZD3f7ni_Myis6IDX11uimdkMRaU1ABr9SgQhnsPw&oe=646AF336"
+                  src="./favicon.png"
                   alt="Ata"
-                  className="rounded-full"
                 />
               </div>
             </div>

@@ -9,22 +9,22 @@ const Project = () => {
       desc: "A one-page website that tracks the accuracy of company headlines. The slogan 'WE BRING YOUR IDEAS TO LIFE' gives Senja good reasons to join the company with several projects, teams, and clients.",
       url: "https://senja.co.uk",
       imgUrl:
-        "https://media.discordapp.net/attachments/917983285370572821/1027057256870727750/Screen_Shot_2022-09-08_at_16.14.11.webp",
+        "./senja.png",
     },
     {
-      title: "Pintek",
-      desc: "Pintek is a financial innovation company whose mission is to drive the transformation of education through financial service innovation and is committed to enabling the education ecosystem to develop sustainably.",
-      url: "https://agastyoatallah-bandung.vercel.app/",
+      title: "Noovoleum",
+      desc: "Since 2022, our mission is to leverage proprietary technologies and AI solutions to optimize and maximize the collection of Used Cooking Oil from households and small producers, incentivizing them through profit sharing.",
+      url: "https://www.noovoleum.com/",
       imgUrl:
-        "https://media.discordapp.net/attachments/917983285370572821/1027057257327898744/Screen_Shot_2022-09-08_at_16.28.18.webp",
+        "./noovoleum.png",
     },
-    {
-      title: "Ayoconnect",
-      desc: "Established in 2016, Ayoconnect is now Southeast Asia's largest Open Finance API platform. We provide full-stack API solutions, powering the leading companies of today and the tech unicorns of tomorrow.",
-      url: "https://agastyoatallah-quiz-app.vercel.app/",
-      imgUrl:
-        "https://media.discordapp.net/attachments/917983285370572821/1087197360100225104/Screenshot_2023-03-20_091039.webp?",
-    },
+    // {
+    //   title: "Glamify",
+    //   desc: "Established in 2016, Ayoconnect is now Southeast Asia's largest Open Finance API platform. We provide full-stack API solutions, powering the leading companies of today and the tech unicorns of tomorrow.",
+    //   url: "https://agastyoatallah-quiz-app.vercel.app/",
+    //   imgUrl:
+    //     "https://media.discordapp.net/attachments/917983285370572821/1087197360100225104/Screenshot_2023-03-20_091039.webp?",
+    // },
     // {
     //   title: "Nichol+ Hotstar",
     //   desc: "Nichol+ Hotstar is actually a website that duplicate the looks from Disney+ Hotstar, using React.JS and TailwindCSS. I trained to consume API from TmdbAPI.",
