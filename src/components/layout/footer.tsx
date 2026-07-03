@@ -18,8 +18,8 @@ export function Footer() {
           className="h-auto max-w-full"
         />
       </div>
-      <div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 text-text">
-        <p className="text-sm opacity-50">© Agastyo Atallah A, 2024</p>
+      <div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 text-foreground">
+        <p className="text-sm text-muted">© Agastyo Atallah A, 2024</p>
         <ContactDialog />
       </div>
     </footer>

@@ -13,14 +13,14 @@ export default function ProjectsPage() {
       <div className="mx-auto max-w-3xl">
         <h1
           id="projects-heading"
-          className="my-4 border-b border-white/20 py-4 text-4xl font-black text-accent"
+          className="my-4 border-b border-border-strong py-4 text-3xl leading-tight font-black text-accent sm:text-4xl"
         >
           Projects!
         </h1>
       </div>
 
       <section className="mb-16" aria-labelledby="projects-heading">
-        <p className="mx-auto max-w-3xl text-lg leading-8 text-text">
+        <p className="mx-auto max-w-3xl text-base leading-7 text-muted-strong sm:text-lg sm:leading-8">
           I believe it’s the best way to learn anything. You get full control
           over the creative side of programming. Here’s is a partial list of
           projects I have built over the last few years:

@@ -33,7 +33,7 @@ export function ContactDialog() {
       <button
         type="button"
         onClick={openDialog}
-        className="inline-flex items-center gap-3 rounded-full bg-panel px-4 py-2 text-text opacity-90 transition hover:opacity-100 active:scale-95"
+        className="inline-flex items-center gap-3 rounded-full border border-border bg-surface-elevated px-4 py-2 text-sm font-semibold text-foreground transition-[transform,background-color,border-color] hover:border-border-strong hover:bg-surface active:scale-95"
       >
         <svg
           width="16"
@@ -52,17 +52,17 @@ export function ContactDialog() {
         ref={dialogRef}
         aria-labelledby="contact-dialog-title"
         onClick={handleBackdropClick}
-        className="m-auto max-h-[calc(100vh-2rem)] w-[calc(100%-2rem)] max-w-3xl overflow-y-auto rounded-3xl border border-accent/40 bg-page p-6 text-text shadow-2xl sm:p-8"
+        className="m-auto max-h-[calc(100vh-2rem)] w-[calc(100%-2rem)] max-w-3xl overflow-y-auto rounded-3xl border border-border-strong bg-background p-6 text-foreground shadow-2xl sm:p-8"
       >
         <button
           type="button"
           onClick={closeDialog}
           aria-label="Close contact form"
-          className="absolute top-6 right-6 flex items-center gap-2 opacity-60 transition-opacity hover:opacity-100"
+          className="absolute top-6 right-6 flex items-center gap-2 text-muted transition-colors hover:text-foreground"
         >
           <span
             aria-hidden="true"
-            className="hidden rounded bg-accent px-2 py-1 text-xs text-[#1e1e2e] sm:block"
+            className="hidden rounded bg-accent px-2 py-1 text-xs font-semibold text-accent-foreground sm:block"
           >
             esc
           </span>
@@ -80,7 +80,7 @@ export function ContactDialog() {
         <h2 id="contact-dialog-title" className="pr-24 text-3xl font-black">
           Get In Touch
         </h2>
-        <p className="mt-2 text-lg leading-8">
+        <p className="mt-2 text-base leading-7 text-muted-strong sm:text-lg sm:leading-8">
           Do you have an interesting job opportunity? Want to ask me a question?
           Or, just want to connect? Feel free to contact me.
         </p>
@@ -97,7 +97,7 @@ export function ContactDialog() {
                 name="name"
                 type="text"
                 autoComplete="name"
-                className="w-full rounded border border-accent/60 bg-panel p-3 text-lg text-text outline-none placeholder:text-text/50"
+                className="w-full rounded border border-border-strong bg-surface p-3 text-base text-foreground outline-none placeholder:text-muted focus:border-accent sm:text-lg"
                 placeholder="Full Name"
               />
             </div>
@@ -111,7 +111,7 @@ export function ContactDialog() {
                 name="email"
                 type="email"
                 autoComplete="email"
-                className="w-full rounded border border-accent/60 bg-panel p-3 text-lg text-text outline-none placeholder:text-text/50"
+                className="w-full rounded border border-border-strong bg-surface p-3 text-base text-foreground outline-none placeholder:text-muted focus:border-accent sm:text-lg"
                 placeholder="Email"
               />
             </div>
@@ -124,13 +124,13 @@ export function ContactDialog() {
             id="contact-message"
             required
             name="message"
-            className="mt-4 h-64 w-full resize-none rounded border border-accent/60 bg-panel p-3 text-lg text-text outline-none placeholder:text-text/50"
+            className="mt-4 h-64 w-full resize-none rounded border border-border-strong bg-surface p-3 text-base text-foreground outline-none placeholder:text-muted focus:border-accent sm:text-lg"
             placeholder="Message"
           />
 
           <button
             type="submit"
-            className="mt-4 inline-flex items-center rounded-lg bg-action px-5 py-3 text-sm font-semibold text-white opacity-90 transition hover:opacity-100 active:scale-95"
+            className="mt-4 inline-flex items-center rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground transition-[transform,background-color] hover:bg-accent-hover active:scale-95"
           >
             Send
           </button>

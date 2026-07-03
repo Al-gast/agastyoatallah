@@ -20,19 +20,19 @@ export default function HomePage() {
         </div>
 
         <Reveal className="my-6">
-          <h1 className="text-center text-4xl font-black text-text">
+          <h1 className="text-center text-3xl leading-tight font-black text-foreground sm:text-4xl lg:text-5xl">
             Hey, I&apos;m Agastyo Atallah.
           </h1>
         </Reveal>
 
-        <div className="mt-4 flex flex-col items-center text-lg text-text">
+        <div className="mt-4 flex flex-col items-center text-base text-foreground sm:text-lg">
           <div className="max-w-3xl">
             <Reveal delay={0.14}>
-              <p className="text-center leading-8">
+              <p className="text-center leading-7 sm:leading-8">
                 Software Engineer living in{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Bandung"
-                  className="text-accent underline-offset-4 hover:underline"
+                  className="text-accent underline-offset-4 transition-colors hover:text-accent-hover hover:underline"
                 >
                   Bandung, Indonesia
                 </a>
@@ -48,7 +48,7 @@ export default function HomePage() {
                   <a
                     href="mailto:agastyo2004@gmail.com"
                     aria-label="Email Agastyo Atallah"
-                    className="opacity-50 transition-opacity hover:opacity-100"
+                    className="text-muted transition-colors hover:text-foreground"
                   >
                     <svg
                       width="24"
@@ -66,7 +66,7 @@ export default function HomePage() {
                   <a
                     href="https://github.com/Al-gast"
                     aria-label="Agastyo Atallah on GitHub"
-                    className="opacity-50 transition-opacity hover:opacity-100"
+                    className="text-muted transition-colors hover:text-foreground"
                   >
                     <svg
                       width="24"
@@ -83,7 +83,7 @@ export default function HomePage() {
                   <a
                     href="https://www.linkedin.com/in/agastyo-atallah-al-ardhi/"
                     aria-label="Agastyo Atallah on LinkedIn"
-                    className="rounded-sm opacity-50 transition-opacity hover:opacity-100"
+                    className="rounded-sm text-muted transition-colors hover:text-foreground"
                   >
                     <svg
                       width="24"

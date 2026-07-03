@@ -11,20 +11,22 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
   return (
     <article
       data-cursor="view"
-      className={`group flex flex-1 items-center gap-8 rounded-lg border border-white/10 bg-panel p-4 transition-[transform,border-color,box-shadow] duration-300 ease-out hover:border-accent/40 hover:shadow-[0_14px_36px_rgba(14,131,136,0.14)] focus-within:border-accent/40 focus-within:shadow-[0_14px_36px_rgba(14,131,136,0.14)] motion-safe:hover:-translate-y-1 motion-safe:focus-within:-translate-y-1 motion-reduce:transition-none lg:p-8 ${
+      className={`group flex flex-1 items-center gap-8 rounded-lg border border-border bg-surface p-4 transition-[transform,border-color,box-shadow] duration-300 ease-out hover:border-border-strong hover:shadow-[0_14px_36px_rgba(14,131,136,0.14)] focus-within:border-border-strong focus-within:shadow-[0_14px_36px_rgba(14,131,136,0.14)] motion-safe:hover:-translate-y-1 motion-safe:focus-within:-translate-y-1 motion-reduce:transition-none lg:p-8 ${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
       <div className="flex-1 lg:w-1/2">
-        <h2 className="text-2xl font-bold text-accent">{project.title}</h2>
-        <p className="mt-2 mb-4 text-lg leading-8 text-text">
+        <h2 className="text-xl leading-snug font-semibold text-accent sm:text-2xl">
+          {project.title}
+        </h2>
+        <p className="mt-2 mb-4 text-base leading-7 text-muted-strong sm:text-lg sm:leading-8">
           {project.description}
         </p>
         <a
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 rounded-lg bg-action px-5 py-3 text-sm font-semibold text-white opacity-95 transition-[transform,opacity] hover:opacity-100 active:scale-95 motion-reduce:transform-none motion-reduce:transition-none"
+          className="inline-flex items-center gap-3 rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground transition-[transform,background-color] hover:bg-accent-hover active:scale-95 motion-reduce:transform-none motion-reduce:transition-none"
         >
           View Website
           <svg

@@ -2,31 +2,47 @@
 @import "tailwindcss";
 
 @theme {
-  --color-text: #cbe4de;
+  --color-background: #222222;
+  --color-foreground: #d7e3e0;
+  --color-surface: #2c3333;
+  --color-surface-elevated: #343d3d;
+  --color-border: #465453;
+  --color-border-strong: #607573;
+  --color-muted: #91a4a0;
+  --color-muted-strong: #b2c2bf;
   --color-accent: #7db9b6;
-  --color-action: #0e8388;
-  --color-panel: #2c3333;
-  --color-page: #222222;
+  --color-accent-hover: #91c9c5;
+  --color-accent-foreground: #102827;
+
+  /* Compatibility aliases for isolated animation components. */
+  --color-text: var(--color-foreground);
+  --color-action: var(--color-accent);
+  --color-panel: var(--color-surface);
+  --color-page: var(--color-background);
+
+  /* Mulish is loaded at 400, 600, and 900 only. */
+  --font-weight-bold: 600;
 }
 
 @layer base {
   html {
     min-height: 100%;
-    background: var(--color-page);
+    background: var(--color-background);
   }
 
   body {
     min-height: 100%;
     margin: 0;
-    background: var(--color-page);
-    color: var(--color-text);
+    background: var(--color-background);
+    color: var(--color-foreground);
     font-family: "Mulish", ui-sans-serif, system-ui, sans-serif;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.6;
   }
 
   ::selection {
-    background: #0e8388;
-    color: #ffffff;
+    background: var(--color-accent);
+    color: var(--color-accent-foreground);
   }
 
   :focus-visible {
@@ -36,7 +52,7 @@
 }
 
 .nav-link-active {
-  color: #1e1e2e;
+  color: var(--color-accent-foreground);
 }
 
 .nav-link-active::after {
@@ -47,7 +63,7 @@
   bottom: -0.5rem;
   left: -0.75rem;
   border-radius: 0.125rem;
-  background: var(--color-action);
+  background: var(--color-accent);
   content: "";
   transform: rotate(-3deg) skewX(-6deg);
 }
