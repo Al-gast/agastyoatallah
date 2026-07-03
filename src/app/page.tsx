@@ -1,9 +1,11 @@
 import Image from "next/image"
 
+import { Reveal } from "@/components/ui/reveal"
+
 export default function HomePage() {
   return (
     <main className="mt-4 px-4 lg:px-0">
-      <div className="flex justify-center">
+      <Reveal className="flex justify-center">
         <Image
           src="/favicon.png"
           alt="Agastyo Atallah"
@@ -12,13 +14,15 @@ export default function HomePage() {
           priority
           className="h-36 w-36"
         />
-      </div>
+      </Reveal>
 
-      <h1 className="my-6 text-center text-4xl font-black text-text">
-        Hey, I&apos;m Agastyo Atallah.
-      </h1>
+      <Reveal className="my-6">
+        <h1 className="text-center text-4xl font-black text-text">
+          Hey, I&apos;m Agastyo Atallah.
+        </h1>
+      </Reveal>
 
-      <div className="mt-4 flex flex-col items-center text-lg text-text">
+      <Reveal className="mt-4 flex flex-col items-center text-lg text-text">
         <div className="max-w-3xl">
           <p className="text-center leading-8">
             Software Engineer living in{" "}
@@ -84,7 +88,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </div>
+      </Reveal>
     </main>
   )
 }

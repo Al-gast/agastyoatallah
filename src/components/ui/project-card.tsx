@@ -10,7 +10,7 @@ type ProjectCardProps = {
 export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
   return (
     <article
-      className={`flex flex-1 items-center gap-8 rounded-lg bg-panel p-4 lg:p-8 ${
+      className={`group flex flex-1 items-center gap-8 rounded-lg border border-white/10 bg-panel p-4 transition-[transform,border-color,box-shadow] duration-300 ease-out hover:border-accent/40 hover:shadow-[0_14px_36px_rgba(14,131,136,0.14)] focus-within:border-accent/40 focus-within:shadow-[0_14px_36px_rgba(14,131,136,0.14)] motion-safe:hover:-translate-y-1 motion-safe:focus-within:-translate-y-1 motion-reduce:transition-none lg:p-8 ${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
     >
@@ -23,7 +23,7 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 rounded-lg bg-action px-5 py-3 text-sm font-semibold text-white opacity-95 transition hover:opacity-100 active:scale-95"
+          className="inline-flex items-center gap-3 rounded-lg bg-action px-5 py-3 text-sm font-semibold text-white opacity-95 transition-[transform,opacity] hover:opacity-100 active:scale-95 motion-reduce:transform-none motion-reduce:transition-none"
         >
           View Website
           <svg
@@ -44,13 +44,13 @@ export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
         </a>
       </div>
 
-      <div className="mx-auto hidden w-1/2 lg:block">
+      <div className="mx-auto hidden w-1/2 overflow-hidden rounded-lg lg:block">
         <Image
           src={project.image.src}
           alt={project.image.alt}
           width={project.image.width}
           height={project.image.height}
-          className="aspect-video w-full rounded-lg object-cover"
+          className="aspect-video w-full object-cover opacity-[0.97] transition-[transform,opacity] duration-300 ease-out group-hover:opacity-100 group-focus-within:opacity-100 motion-safe:group-hover:scale-[1.015] motion-safe:group-focus-within:scale-[1.015] motion-reduce:transition-none"
         />
       </div>
     </article>
