@@ -10,6 +10,7 @@ type ProjectCardProps = {
 export function ProjectCard({ project, reverse = false }: ProjectCardProps) {
   return (
     <article
+      data-cursor="view"
       className={`group flex flex-1 items-center gap-8 rounded-lg border border-white/10 bg-panel p-4 transition-[transform,border-color,box-shadow] duration-300 ease-out hover:border-accent/40 hover:shadow-[0_14px_36px_rgba(14,131,136,0.14)] focus-within:border-accent/40 focus-within:shadow-[0_14px_36px_rgba(14,131,136,0.14)] motion-safe:hover:-translate-y-1 motion-safe:focus-within:-translate-y-1 motion-reduce:transition-none lg:p-8 ${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
       }`}
