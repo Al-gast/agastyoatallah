@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/reveal"
 export default function HomePage() {
   return (
     <main className="mt-4 px-4 lg:px-0">
-      <Reveal className="flex justify-center">
+      <div className="flex justify-center">
         <Image
           src="/favicon.png"
           alt="Agastyo Atallah"
@@ -14,7 +14,7 @@ export default function HomePage() {
           priority
           className="h-36 w-36"
         />
-      </Reveal>
+      </div>
 
       <Reveal className="my-6">
         <h1 className="text-center text-4xl font-black text-text">
@@ -22,22 +22,24 @@ export default function HomePage() {
         </h1>
       </Reveal>
 
-      <Reveal className="mt-4 flex flex-col items-center text-lg text-text">
+      <div className="mt-4 flex flex-col items-center text-lg text-text">
         <div className="max-w-3xl">
-          <p className="text-center leading-8">
-            Software Engineer living in{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/Bandung"
-              className="text-accent underline-offset-4 hover:underline"
-            >
-              Bandung, Indonesia
-            </a>
-            . I love building products, solving problems, and everything around
-            them. Programmer for the most part, but I don&apos;t shy away from
-            getting my feet wet in unfamiliar domains.
-          </p>
+          <Reveal delay={0.14}>
+            <p className="text-center leading-8">
+              Software Engineer living in{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Bandung"
+                className="text-accent underline-offset-4 hover:underline"
+              >
+                Bandung, Indonesia
+              </a>
+              . I love building products, solving problems, and everything
+              around them. Programmer for the most part, but I don&apos;t shy
+              away from getting my feet wet in unfamiliar domains.
+            </p>
+          </Reveal>
 
-          <div className="mt-7 flex justify-center">
+          <Reveal delay={0.28} className="mt-7 flex justify-center">
             <div className="flex gap-4 rounded p-2">
               <a
                 href="mailto:agastyo2004@gmail.com"
@@ -86,9 +88,9 @@ export default function HomePage() {
                 </svg>
               </a>
             </div>
-          </div>
+          </Reveal>
         </div>
-      </Reveal>
+      </div>
     </main>
   )
 }
