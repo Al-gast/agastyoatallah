@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-text: #cbe4de;
+  --color-accent: #7db9b6;
+  --color-action: #0e8388;
+  --color-panel: #2c3333;
+  --color-page: #222222;
+}
+
+@layer base {
+  html {
+    min-height: 100%;
+    background: var(--color-page);
+  }
+
+  body {
+    min-height: 100%;
+    margin: 0;
+    background: var(--color-page);
+    color: var(--color-text);
+    font-family: "Mulish", ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.5;
+  }
+
+  ::selection {
+    background: #0e8388;
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+}
+
+.nav-link-active {
+  color: #1e1e2e;
+}
+
+.nav-link-active::after {
+  position: absolute;
+  z-index: -1;
+  top: -0.5rem;
+  right: -0.75rem;
+  bottom: -0.5rem;
+  left: -0.75rem;
+  border-radius: 0.125rem;
+  background: var(--color-action);
+  content: "";
+  transform: rotate(-3deg) skewX(-6deg);
+}
+
+dialog::backdrop {
+  background: rgb(15 18 18 / 72%);
+  backdrop-filter: blur(12px);
+}
