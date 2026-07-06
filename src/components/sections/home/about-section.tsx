@@ -10,7 +10,7 @@ export function AboutSection({ copy }: { copy: Dictionary["about"] }) {
         <div className="eyebrow">{copy.eyebrow}</div>
         <Reveal className="about-portrait">
           <div className="portrait-orbit" aria-hidden="true" />
-          <Image src="/favicon.png" alt="Agastyo Atallah" width={250} height={250} sizes="(max-width: 800px) 60vw, 25vw" />
+          <Image src="/profile-about-hd.png" alt="Agastyo Atallah" width={250} height={250} sizes="(max-width: 800px) 60vw, 25vw" />
           <span>{copy.location}</span>
         </Reveal>
         <Reveal className="about-copy" delay={0.08}>
