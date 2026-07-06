@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react"
 
 type CursorState = "default" | "interactive" | "view"
 
-export function CustomCursor() {
+export function CustomCursor({ viewLabel = "View" }: { viewLabel?: string }) {
   const cursorRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -147,7 +147,7 @@ export function CustomCursor() {
     >
       <div className="absolute top-0 left-0 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full border border-accent/70 bg-accent/10 transition-[transform,background-color,border-color] duration-150 ease-out group-data-[state=interactive]:scale-150 group-data-[state=view]:scale-[3.25] group-data-[state=view]:border-accent/50 group-data-[state=view]:bg-page/85" />
       <span className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-[9px] font-bold tracking-wide text-text uppercase opacity-0 transition-opacity duration-150 group-data-[state=view]:opacity-100">
-        View
+        {viewLabel}
       </span>
     </div>
   )
