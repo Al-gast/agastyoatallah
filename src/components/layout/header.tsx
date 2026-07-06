@@ -46,7 +46,7 @@ export function Header({ locale, copy }: HeaderProps) {
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
         if (visible?.target.id) setActiveSection(visible.target.id)
       },
-      { rootMargin: "-30% 0px -55%", threshold: [0, 0.1, 0.4] },
+      { rootMargin: "-20% 0px -35%", threshold: [0, 0.05, 0.1, 0.3] },
     )
     sections.forEach((section) => observer.observe(section))
     return () => observer.disconnect()
