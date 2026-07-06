@@ -39,17 +39,30 @@ export function Header({ locale, copy }: HeaderProps) {
     const sections = navigation
       .map(({ id }) => document.getElementById(id))
       .filter((section): section is HTMLElement => Boolean(section))
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0]
-        if (visible?.target.id) setActiveSection(visible.target.id)
-      },
-      { rootMargin: "-20% 0px -35%", threshold: [0, 0.05, 0.1, 0.3] },
-    )
-    sections.forEach((section) => observer.observe(section))
-    return () => observer.disconnect()
+
+    let raf = 0
+    function updateActiveSection() {
+      raf = 0
+      const trigger = window.innerHeight * 0.4
+      let current = ""
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top <= trigger) {
+          current = section.id
+        }
+      }
+      setActiveSection(current)
+    }
+
+    function onScroll() {
+      if (!raf) raf = requestAnimationFrame(updateActiveSection)
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true })
+    updateActiveSection()
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+      if (raf) cancelAnimationFrame(raf)
+    }
   }, [homePath, navigation, pathname])
 
   useEffect(() => {
