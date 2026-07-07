@@ -8,6 +8,8 @@ export type Dictionary = {
     description: string
     labTitle: string
     labDescription: string
+    projectsTitle: string
+    projectsDescription: string
     experienceTitle: string
     experienceDescription: string
   }
@@ -48,6 +50,10 @@ export type Dictionary = {
     intro: string
     selected: string
     read: string
+    viewAll: string
+    allEyebrow: string
+    allHeading: string
+    allIntro: string
   }
   lab: {
     eyebrow: string
@@ -144,6 +150,9 @@ const en: Dictionary = {
     labTitle: "Interface Lab | Agastyo Atallah",
     labDescription:
       "Small interface experiments in typography, motion, pointer input, and visual feedback.",
+    projectsTitle: "Work | Agastyo Atallah",
+    projectsDescription:
+      "A complete list of selected work and case studies by Agastyo Atallah.",
     experienceTitle: "Experience | Agastyo Atallah",
     experienceDescription:
       "Agastyo Atallah's experience building government systems, internal tools, e-procurement, and public-facing products.",
@@ -187,6 +196,11 @@ const en: Dictionary = {
       "Selected projects where I can share the interface decisions, technical approach, and work behind the final screen.",
     selected: "Selected work",
     read: "View case study",
+    viewAll: "See all work",
+    allEyebrow: "Work / Complete list",
+    allHeading: "All selected work.",
+    allIntro:
+      "A complete list of projects I can share, from client products to self-built experiments and case studies.",
   },
   lab: {
     eyebrow: "03 / Interface lab",
@@ -326,6 +340,9 @@ const id: Dictionary = {
     labTitle: "Lab Antarmuka | Agastyo Atallah",
     labDescription:
       "Eksperimen kecil seputar tipografi, motion, input pointer, dan feedback visual.",
+    projectsTitle: "Karya | Agastyo Atallah",
+    projectsDescription:
+      "Daftar lengkap karya pilihan dan studi kasus Agastyo Atallah.",
     experienceTitle: "Pengalaman | Agastyo Atallah",
     experienceDescription:
       "Pengalaman Agastyo Atallah membangun sistem pemerintahan, aplikasi internal, e-procurement, dan produk untuk pengguna umum.",
@@ -369,6 +386,11 @@ const id: Dictionary = {
       "Pilihan proyek yang bisa saya ceritakan lebih jauh—mulai dari keputusan antarmuka, pendekatan teknis, sampai proses di balik hasil akhirnya.",
     selected: "Karya pilihan",
     read: "Lihat studi kasus",
+    viewAll: "Lihat semua pekerjaan",
+    allEyebrow: "Karya / Daftar lengkap",
+    allHeading: "Semua karya pilihan.",
+    allIntro:
+      "Daftar lengkap project yang bisa saya ceritakan, mulai dari produk client sampai eksperimen dan studi kasus yang saya bangun sendiri.",
   },
   lab: {
     eyebrow: "03 / Lab antarmuka",

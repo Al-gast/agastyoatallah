@@ -4,7 +4,6 @@ import { NextResponse } from "next/server"
 import { defaultLocale, isLocale } from "@/i18n/config"
 
 const sectionRedirects: Record<string, string> = {
-  "/projects": "work",
   "/about": "about",
   "/contact": "contact",
 }

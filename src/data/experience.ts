@@ -30,7 +30,7 @@ export const experienceEntries: Experience[] = [
       },
     ],
     stack: ["Next.js", "AdonisJS", "PostgreSQL", "Go", "Svelte.js"],
-    relatedProjectSlugs: [],
+    relatedProjectSlugs: ["jfpkpm", "komplekita"],
   },
   {
     id: "senja-solutions",

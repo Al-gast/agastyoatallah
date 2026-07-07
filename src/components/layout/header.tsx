@@ -102,6 +102,7 @@ export function Header({ locale, copy }: HeaderProps) {
     if (pathname === homePath) return activeSection
     if (pathname === homePath + "/lab") return "lab"
     if (pathname === homePath + "/experience") return "experience"
+    if (pathname === homePath + "/projects") return "work"
     if (pathname?.startsWith(homePath + "/work/")) return "work"
     return ""
   })()

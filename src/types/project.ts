@@ -16,6 +16,7 @@ export type ProjectNarrative = {
 export type Project = {
   slug: string
   title: string
+  displayTitle?: string[]
   summary: LocalizedText
   liveUrl: string
   year?: string

@@ -45,7 +45,7 @@ export default async function ExperiencePage({
 
   return (
     <main className="inner-page experience-page">
-      <header className="inner-hero experience-hero" data-scene="experience" data-accent="#4f7cff">
+      <header className="inner-hero experience-hero" data-scene="experience" data-accent="#6d5cff">
         <div className="layout-grid">
           <p className="eyebrow">{dictionary.experience.pageEyebrow}</p>
           <div className="inner-hero-copy">

@@ -13,6 +13,8 @@ type SelectedWorkProps = {
 }
 
 export function SelectedWork({ locale, copy }: SelectedWorkProps) {
+  const featuredProjects = projects.slice(0, 3)
+
   return (
     <section id="work" aria-labelledby="selected-work-heading" data-scene="work" className="section-shell work-section">
       <div className="section-heading layout-grid">
@@ -23,7 +25,7 @@ export function SelectedWork({ locale, copy }: SelectedWorkProps) {
         </div>
       </div>
       <div className="work-list">
-        {projects.map((project, index) => (
+        {featuredProjects.map((project, index) => (
           <article
             key={project.slug}
             className="work-chapter"
@@ -37,7 +39,13 @@ export function SelectedWork({ locale, copy }: SelectedWorkProps) {
                 <span>{copy.selected}</span>
               </div>
               <Reveal className="work-copy">
-                <h3>{project.title}</h3>
+                <h3>
+                  {(project.displayTitle ?? [project.title]).map((line) => (
+                    <span key={line} className="project-title-line">
+                      {line}
+                    </span>
+                  ))}
+                </h3>
                 <p>{localize(project.summary, locale)}</p>
                 <Link href={"/" + locale + "/work/" + project.slug} className="project-link" data-cursor="view">
                   {copy.read} <span aria-hidden="true">↗</span>
@@ -64,6 +72,11 @@ export function SelectedWork({ locale, copy }: SelectedWorkProps) {
             </div>
           </article>
         ))}
+      </div>
+      <div className="work-view-all page-gutter">
+        <Link href={"/" + locale + "/projects"} className="button button-outline">
+          {copy.viewAll} <span aria-hidden="true">↗</span>
+        </Link>
       </div>
     </section>
   )

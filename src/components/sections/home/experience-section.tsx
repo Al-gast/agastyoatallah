@@ -20,7 +20,7 @@ export function ExperienceSection({ locale, copy }: ExperienceSectionProps) {
   )
 
   return (
-    <section id="experience" aria-labelledby="experience-heading" data-scene="experience" data-accent="#4f7cff" className="section-shell experience-section experience-section-direct">
+    <section id="experience" aria-labelledby="experience-heading" data-scene="experience" data-accent="#6d5cff" className="section-shell experience-section experience-section-direct">
       <div className="experience-direct-heading page-gutter">
         <span className="eyebrow" aria-hidden="true">{copy.eyebrow}</span>
         <h2 id="experience-heading" className="sr-only">{copy.heading}</h2>

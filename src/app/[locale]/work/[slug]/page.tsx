@@ -75,7 +75,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             {dictionary.caseStudy.eyebrow} / {"0" + (currentIndex + 1)}
           </div>
           <div className="case-title">
-            <h1>{project.title}</h1>
+            <h1>
+              {(project.displayTitle ?? [project.title]).map((line) => (
+                <span key={line} className="project-title-line">
+                  {line}
+                </span>
+              ))}
+            </h1>
             <p>{localize(project.summary, locale)}</p>
           </div>
           <div className="case-facts">
