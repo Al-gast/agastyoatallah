@@ -594,6 +594,17 @@ a {
   scroll-margin-top: 5rem;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .section-heading {
   margin-bottom: clamp(3rem, 7vw, 7rem);
 }
@@ -1044,6 +1055,78 @@ a {
   line-height: 1.75;
 }
 
+.about-capabilities {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  margin-top: clamp(5rem, 9vw, 8rem);
+}
+
+.about-capabilities-heading {
+  grid-column: 1 / 5;
+}
+
+.about-capabilities-heading > span {
+  color: var(--accent);
+  font-family: var(--font-ibm-plex-mono), monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-capabilities-heading h3 {
+  max-width: 12ch;
+  margin: 1rem 0;
+  font-size: clamp(2rem, 4vw, 3.8rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.about-capabilities-heading p {
+  max-width: 26rem;
+  margin: 0;
+  color: var(--muted-strong);
+  line-height: 1.7;
+}
+
+.about-capabilities-grid {
+  grid-column: 6 / 13;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--border);
+}
+
+.about-capabilities-grid > div:nth-child(odd) {
+  border-right: 1px solid var(--border);
+}
+
+.about-capabilities-grid article {
+  min-height: 15rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-capabilities-grid article > span {
+  color: var(--accent);
+  font-family: var(--font-ibm-plex-mono), monospace;
+  font-size: 0.68rem;
+}
+
+.about-capabilities-grid h4 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.about-capabilities-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
 .principles-list {
   grid-column: 6 / 13;
   margin-top: 5rem;
@@ -1072,6 +1155,14 @@ a {
 .experience-section {
   background:
     linear-gradient(140deg, color-mix(in srgb, var(--accent) 7%, transparent), transparent 48%);
+}
+
+.experience-section-direct {
+  padding-top: clamp(4rem, 8vw, 7rem);
+}
+
+.experience-direct-heading {
+  margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 .experience-home-timeline {
@@ -1138,7 +1229,7 @@ a {
 .experience-years span {
   padding-block: 0.85rem;
   border-bottom: 1px solid var(--border);
-  color: var(--muted);
+  color: var(--muted-strong);
   font-family: var(--font-ibm-plex-mono), monospace;
   font-size: 0.7rem;
   transition: color 180ms ease, padding-left 180ms ease;
@@ -1154,7 +1245,7 @@ a {
   padding: 0 0 clamp(4rem, 9vw, 8rem);
   border-bottom: 1px solid var(--border);
   scroll-margin-top: 8rem;
-  opacity: 0.62;
+  opacity: 1;
   transition: opacity 240ms ease;
 }
 
@@ -1171,7 +1262,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem 1.5rem;
-  color: var(--muted);
+  color: var(--muted-strong);
   font-family: var(--font-ibm-plex-mono), monospace;
   font-size: 0.66rem;
   letter-spacing: 0.05em;
@@ -1197,7 +1288,7 @@ a {
 
 .experience-entry-heading strong,
 .experience-entry-heading a {
-  color: var(--accent);
+  color: color-mix(in srgb, var(--accent) 55%, var(--foreground));
   font-size: 0.92rem;
   font-weight: 500;
 }
@@ -1205,7 +1296,7 @@ a {
 .experience-summary {
   max-width: 44rem;
   margin: 2rem 0 0 auto;
-  color: var(--muted-strong);
+  color: color-mix(in srgb, var(--foreground) 84%, var(--muted-strong));
   font-size: clamp(1rem, 1.4vw, 1.2rem);
   line-height: 1.75;
 }
@@ -1224,7 +1315,7 @@ a {
 .experience-contributions > span,
 .experience-stack > span,
 .experience-related > span {
-  color: var(--muted);
+  color: var(--muted-strong);
   font-family: var(--font-ibm-plex-mono), monospace;
   font-size: 0.66rem;
   letter-spacing: 0.05em;
@@ -1242,7 +1333,7 @@ a {
 .experience-contributions li {
   position: relative;
   padding-left: 1.2rem;
-  color: var(--muted-strong);
+  color: color-mix(in srgb, var(--foreground) 80%, var(--muted-strong));
 }
 
 .experience-contributions li::before {
@@ -1690,6 +1781,8 @@ dialog::backdrop {
   .about-portrait { grid-column: 1 / 6; }
   .about-copy,
   .principles-list { grid-column: 6 / 13; }
+  .about-capabilities-heading { grid-column: 1 / 5; }
+  .about-capabilities-grid { grid-column: 5 / 13; }
   .contact-heading { grid-column: 1 / 10; }
   .contact-aside { grid-column: 9 / 13; margin-top: 3rem; }
   .contact-form-wrap { grid-column: 3 / 13; }
@@ -1756,6 +1849,11 @@ dialog::backdrop {
   .principles-list { grid-column: 1 / 13; }
   .about-portrait { min-height: 25rem; margin-bottom: 3rem; }
   .about-copy { padding-top: 0; }
+  .about-capabilities { display: block; margin-top: 4.5rem; }
+  .about-capabilities-heading { margin-bottom: 2.5rem; }
+  .about-capabilities-grid { grid-template-columns: 1fr; }
+  .about-capabilities-grid > div:nth-child(odd) { border-right: 0; }
+  .about-capabilities-grid article { min-height: 0; padding-inline: 0; }
   .principles-list { margin-top: 3rem; }
   .principles-list article { grid-template-columns: 2rem 1fr; }
   .principles-list p { grid-column: 2; }

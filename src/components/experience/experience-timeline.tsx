@@ -71,8 +71,8 @@ export function ExperienceTimeline({
           >
             <div className="experience-entry-meta">
               <span>{entry.period}</span>
-              <span>{entry.employmentType}</span>
-              <span>{entry.location}</span>
+              {entry.employmentType ? <span>{entry.employmentType}</span> : null}
+              {entry.location ? <span>{entry.location}</span> : null}
             </div>
             <div className="experience-entry-heading">
               <h3>{entry.role}</h3>

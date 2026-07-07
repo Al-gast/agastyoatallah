@@ -21,7 +21,7 @@ export function HomeHero({ copy }: { copy: Dictionary["hero"] }) {
           <p>{copy.intro}</p>
           <div className="hero-actions">
             <Magnetic>
-              <Link href="#work" className="button button-primary">
+              <Link href="#experience" className="button button-primary">
                 {copy.explore} <span aria-hidden="true">↓</span>
               </Link>
             </Magnetic>

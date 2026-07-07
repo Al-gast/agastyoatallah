@@ -3,7 +3,12 @@ import Image from "next/image"
 import { Reveal } from "@/components/ui/reveal"
 import type { Dictionary } from "@/i18n/dictionaries"
 
-export function AboutSection({ copy }: { copy: Dictionary["about"] }) {
+type AboutSectionProps = {
+  copy: Dictionary["about"]
+  capabilities: Dictionary["capabilities"]
+}
+
+export function AboutSection({ copy, capabilities }: AboutSectionProps) {
   return (
     <section id="about" aria-labelledby="about-heading" data-scene="about" data-accent="#8a63ff" className="section-shell about-section">
       <div className="layout-grid about-grid">
@@ -20,6 +25,24 @@ export function AboutSection({ copy }: { copy: Dictionary["about"] }) {
             {copy.hello} <span aria-hidden="true">↗</span>
           </a>
         </Reveal>
+        <div className="about-capabilities">
+          <Reveal className="about-capabilities-heading">
+            <span>{capabilities.eyebrow}</span>
+            <h3>{capabilities.heading}</h3>
+            <p>{capabilities.intro}</p>
+          </Reveal>
+          <div className="about-capabilities-grid">
+            {capabilities.items.map((capability, index) => (
+              <Reveal key={capability.title} delay={index * 0.04}>
+                <article>
+                  <span>{"0" + (index + 1)}</span>
+                  <h4>{capability.title}</h4>
+                  <p>{capability.body}</p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
         <div className="principles-list">
           {copy.principles.map((principle, index) => (
             <article key={principle.title}>

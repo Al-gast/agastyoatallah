@@ -25,9 +25,9 @@ export function Header({ locale, copy }: HeaderProps) {
 
   const navigation = useMemo(
     () => [
+      { id: "experience", label: copy.nav.experience },
       { id: "work", label: copy.nav.work },
       { id: "lab", label: copy.nav.lab },
-      { id: "experience", label: copy.nav.experience },
       { id: "about", label: copy.nav.about },
       { id: "contact", label: copy.nav.contact },
     ],

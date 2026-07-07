@@ -20,13 +20,10 @@ export function ExperienceSection({ locale, copy }: ExperienceSectionProps) {
   )
 
   return (
-    <section id="experience" aria-labelledby="experience-heading" data-scene="experience" data-accent="#4f7cff" className="section-shell experience-section">
-      <div className="section-heading layout-grid">
-        <div className="eyebrow">{copy.eyebrow}</div>
-        <div>
-          <h2 id="experience-heading">{copy.heading}</h2>
-          <p>{copy.intro}</p>
-        </div>
+    <section id="experience" aria-labelledby="experience-heading" data-scene="experience" data-accent="#4f7cff" className="section-shell experience-section experience-section-direct">
+      <div className="experience-direct-heading page-gutter">
+        <span className="eyebrow" aria-hidden="true">{copy.eyebrow}</span>
+        <h2 id="experience-heading" className="sr-only">{copy.heading}</h2>
       </div>
       <Reveal className="experience-home-timeline page-gutter">
         <ExperienceTimeline entries={entries} locale={locale} copy={copy} compact />

@@ -64,7 +64,6 @@ export type Dictionary = {
   experience: {
     eyebrow: string
     heading: string
-    intro: string
     viewAll: string
     emptyTitle: string
     emptyBody: string
@@ -139,15 +138,15 @@ export type Dictionary = {
 
 const en: Dictionary = {
   metadata: {
-    title: "Agastyo Atallah | Frontend-focused Full-stack Developer",
+    title: "Agastyo Atallah | Software Engineer",
     description:
-      "Selected work and interface experiments by Agastyo Atallah, a frontend-focused full-stack developer based in Bandung, Indonesia.",
+      "The experience, selected work, and interface experiments of Agastyo Atallah, a software engineer based in Bandung.",
     labTitle: "Interface Lab | Agastyo Atallah",
     labDescription:
-      "Interactive studies in motion, typography, image treatment, and interface physics.",
+      "Small interface experiments in typography, motion, pointer input, and visual feedback.",
     experienceTitle: "Experience | Agastyo Atallah",
     experienceDescription:
-      "Professional experience, contributions, and selected product work by Agastyo Atallah.",
+      "Agastyo Atallah's experience building government systems, internal tools, e-procurement, and public-facing products.",
   },
   nav: {
     work: "Work",
@@ -160,115 +159,118 @@ const en: Dictionary = {
     primaryLabel: "Primary navigation",
   },
   language: {
-    label: "Change language",
-    english: "Switch to English",
-    indonesian: "Switch to Indonesian",
+    label: "Choose language",
+    english: "Use English",
+    indonesian: "Use Indonesian",
   },
   theme: {
-    toLight: "Switch to light theme",
-    toDark: "Switch to dark theme",
+    toLight: "Use light theme",
+    toDark: "Use dark theme",
   },
   hero: {
-    kicker: "Frontend-focused full-stack developer",
-    titleBefore: "I build digital products that",
-    titleEmphasis: "feel",
-    titleAfter: "as good as they work.",
+    kicker: "Software Engineer",
+    titleBefore: "I build reliable digital products with",
+    titleEmphasis: "clear interfaces",
+    titleAfter: ".",
     intro:
-      "I'm Agastyo, a software engineer in Bandung. I work across the stack, with a particular obsession for interfaces, interaction, and the details people actually touch.",
-    explore: "Explore selected work",
-    conversation: "Start a conversation",
+      "I'm Agastyo, a software engineer based in Bandung. I work across product flows, APIs, interfaces, and deployment—keeping the experience simple, usable, and dependable.",
+    explore: "See my experience",
+    conversation: "Talk about a project",
     location: "Bandung, Indonesia",
-    focus: "Interfaces / Systems / Products",
-    scroll: "Scroll to explore",
+    focus: "Product / Web / Software Engineering",
+    scroll: "Scroll to continue",
   },
   work: {
-    eyebrow: "01 / Selected work",
-    heading: "Work that lives beyond the mockup.",
-    intro: "Selected digital experiences, presented as products rather than thumbnails.",
+    eyebrow: "02 / Selected work",
+    heading: "A few products I've helped build.",
+    intro:
+      "Selected projects where I can share the interface decisions, technical approach, and work behind the final screen.",
     selected: "Selected work",
-    read: "Read case study",
+    read: "View case study",
   },
   lab: {
-    eyebrow: "02 / Interface lab",
-    heading: "Small experiments. Serious attention to feel.",
-    intro: "Live studies in motion, input, type, and visual response.",
-    open: "Open the full lab",
+    eyebrow: "03 / Interface lab",
+    heading: "A place to test how interfaces move and respond.",
+    intro:
+      "Small experiments in typography, motion, pointer input, and visual feedback—built to learn, not just to decorate.",
+    open: "Explore all experiments",
   },
   capabilities: {
-    eyebrow: "03 / What I bring",
-    heading: "More than a list of tools.",
+    eyebrow: "Capabilities",
+    heading: "How I contribute to a product.",
     intro:
-      "A frontend specialty backed by the engineering range to ship complete products.",
+      "I care most about the interface, but I use the wider product context to make it work better.",
     items: [
       {
-        title: "Interface craft",
+        title: "Frontend engineering",
         body:
-          "Responsive layouts, interaction design, motion systems, and the final polish that makes an interface feel intentional.",
+          "Responsive interfaces, reusable components, clear states, and interaction details that remain consistent as the product grows.",
       },
       {
-        title: "Product engineering",
+        title: "Product understanding",
         body:
-          "Translating product goals into maintainable components, clear states, and systems that can grow with a team.",
+          "Understanding the user flow and business process before deciding how the solution should work.",
       },
       {
         title: "Full-stack delivery",
         body:
-          "Connecting the interface to data, APIs, and deployment so the experience works beyond the presentation layer.",
+          "Connecting the interface to APIs, databases, authentication, testing, and deployment.",
       },
       {
-        title: "Performance & access",
+        title: "Quality & accessibility",
         body:
-          "Treating speed, semantics, keyboard support, and reduced-motion paths as part of the design—not cleanup work.",
+          "Treating performance, accessibility, error states, and keyboard support as part of the main work.",
       },
     ],
   },
   experience: {
-    eyebrow: "04 / Experience",
-    heading: "The work behind the interface.",
-    intro:
-      "A chronological view of the roles, contributions, and product contexts that shaped how I build.",
-    viewAll: "View full experience",
-    emptyTitle: "The professional timeline is being curated.",
+    eyebrow: "01 / Experience",
+    heading: "Experience timeline",
+    viewAll: "See the full timeline",
+    emptyTitle: "The experience timeline is not available yet.",
     emptyBody:
-      "Verified roles, dates, and contributions will appear here once the details are ready.",
+      "Verified roles and contributions will appear here once the details are ready.",
     present: "Present",
     relatedWork: "Related work",
-    contribution: "Selected contributions",
-    stack: "Technology",
-    pageEyebrow: "Experience / Timeline",
-    pageHeading: "Products are built in context.",
+    contribution: "What I worked on",
+    stack: "Tools & technology",
+    pageEyebrow: "Experience / 2022—2026",
+    pageHeading: "The context behind the work.",
     pageIntro:
-      "A closer look at the teams, responsibilities, and technical decisions behind the work.",
-    back: "Back to the overview",
-    workCta: "Explore selected work",
-    contactCta: "Start a conversation",
+      "A closer look at the teams, systems, and responsibilities that shaped how I approach product engineering today.",
+    back: "Back to the homepage",
+    workCta: "See selected work",
+    contactCta: "Talk about a project",
   },
   about: {
-    eyebrow: "05 / About",
+    eyebrow: "04 / About",
     location: "Based in Bandung / Indonesia",
-    heading: "Curious across the stack. Particular about the interface.",
+    heading: "I care about how a product works, not only how it looks.",
     body:
-      "I enjoy turning ambiguous product ideas into clear, responsive experiences. The browser is where I do my most expressive work, while full-stack knowledge helps me make better product decisions end to end.",
-    hello: "Say hello",
+      "My work usually sits between product needs, technical systems, and the interface people use every day. I like making that connection feel clear, practical, and reliable.",
+    hello: "Send me a note",
     principles: [
       {
-        title: "Start with the user's path.",
-        body: "Interaction and hierarchy should make the next step feel obvious.",
+        title: "Understand the flow first.",
+        body:
+          "Good software starts with the real workflow, constraints, and people using it.",
       },
       {
-        title: "Build the system, then the moment.",
-        body: "Reusable foundations make expressive details easier to sustain.",
+        title: "Keep the main path clear.",
+        body: "Users should always know what to do next.",
       },
       {
-        title: "Polish includes performance.",
-        body: "A beautiful interface should remain quick, inclusive, and resilient.",
+        title: "Build for real use.",
+        body:
+          "A good product needs to be fast, accessible, resilient, and easy to maintain.",
       },
     ],
   },
   contact: {
-    eyebrow: "06 / Contact",
-    heading: "Have something interesting in mind?",
-    subheading: "Let's turn it into an interface people want to use.",
+    eyebrow: "05 / Contact",
+    heading: "Have a product problem worth solving?",
+    subheading:
+      "Tell me what you're building, where it feels stuck, and what a good result looks like.",
     preferEmail: "Prefer email?",
   },
   form: {
@@ -277,54 +279,56 @@ const en: Dictionary = {
     email: "Email",
     emailPlaceholder: "you@company.com",
     message: "Message",
-    messagePlaceholder: "Tell me a little about the opportunity or project.",
+    messagePlaceholder:
+      "A little context about the product, team, or role is enough.",
     send: "Send message",
     sending: "Sending…",
-    success: "Message sent. I'll get back to you soon.",
-    error: "Something went wrong. Please email me directly instead.",
+    success: "Thanks—your message has been sent. I'll reply as soon as I can.",
+    error:
+      "The form could not send your message. You can reach me directly by email.",
   },
   footer: {
-    role: "Frontend-focused full-stack developer",
+    role: "Software Engineer",
     email: "Email",
   },
   labPage: {
     eyebrow: "Interface Lab / 01—04",
-    headingBefore: "Experiments for the part of an interface you can",
+    headingBefore: "Small experiments for interactions you can",
     headingEmphasis: "feel",
     intro:
-      "Small, live studies where motion and input are treated as product material—not decoration.",
-    back: "Back to the overview",
-    enough: "Enough experiments.",
-    seeWork: "See the product work",
+      "A collection of hands-on studies in motion, input, typography, and feedback. Each one tests a small interaction idea directly in the browser.",
+    back: "Back to the homepage",
+    enough: "Ready for the product work?",
+    seeWork: "See selected work",
   },
   caseStudy: {
     eyebrow: "Case study",
-    visit: "Visit live website",
+    visit: "Open live website",
     role: "Role",
     year: "Year",
     stack: "Stack",
     gallery: "Gallery",
     outcome: "Outcome",
-    next: "Next project",
+    next: "Next case study",
     sections: "Case study sections",
     notFoundEyebrow: "404 / Project not found",
-    notFoundHeading: "This case study isn't in the archive.",
-    returnWork: "Return to selected work",
+    notFoundHeading: "This case study is not part of the portfolio.",
+    returnWork: "Back to selected work",
   },
-  cursor: { view: "View" },
+  cursor: { view: "Open" },
 }
 
 const id: Dictionary = {
   metadata: {
-    title: "Agastyo Atallah | Full-stack Developer Spesialis Frontend",
+    title: "Agastyo Atallah | Software Engineer",
     description:
-      "Karya pilihan dan eksperimen antarmuka Agastyo Atallah, full-stack developer dengan spesialisasi frontend dari Bandung, Indonesia.",
+      "Pengalaman, karya pilihan, dan eksperimen antarmuka Agastyo Atallah, software engineer dari Bandung.",
     labTitle: "Lab Antarmuka | Agastyo Atallah",
     labDescription:
-      "Eksperimen interaktif dalam motion, tipografi, pengolahan gambar, dan fisika antarmuka.",
+      "Eksperimen kecil seputar tipografi, motion, input pointer, dan feedback visual.",
     experienceTitle: "Pengalaman | Agastyo Atallah",
     experienceDescription:
-      "Pengalaman profesional, kontribusi, dan karya produk pilihan Agastyo Atallah.",
+      "Pengalaman Agastyo Atallah membangun sistem pemerintahan, aplikasi internal, e-procurement, dan produk untuk pengguna umum.",
   },
   nav: {
     work: "Karya",
@@ -337,115 +341,118 @@ const id: Dictionary = {
     primaryLabel: "Navigasi utama",
   },
   language: {
-    label: "Ganti bahasa",
-    english: "Ganti ke bahasa Inggris",
-    indonesian: "Ganti ke bahasa Indonesia",
+    label: "Pilih bahasa",
+    english: "Gunakan bahasa Inggris",
+    indonesian: "Gunakan bahasa Indonesia",
   },
   theme: {
-    toLight: "Ganti ke tema terang",
-    toDark: "Ganti ke tema gelap",
+    toLight: "Gunakan tema terang",
+    toDark: "Gunakan tema gelap",
   },
   hero: {
-    kicker: "Full-stack developer dengan spesialisasi frontend",
-    titleBefore: "Saya membuat produk digital yang",
-    titleEmphasis: "nyaman",
-    titleAfter: "digunakan dan bekerja dengan baik.",
+    kicker: "Software Engineer",
+    titleBefore: "Saya membangun produk digital yang",
+    titleEmphasis: "jelas",
+    titleAfter: "dan bisa diandalkan.",
     intro:
-      "Saya Agastyo, software engineer di Bandung. Saya bekerja di seluruh lapisan produk, dengan perhatian khusus pada antarmuka, interaksi, dan detail yang benar-benar disentuh pengguna.",
-    explore: "Lihat karya pilihan",
-    conversation: "Mulai percakapan",
+      "Saya Agastyo, software engineer asal Bandung. Saya terbiasa mengerjakan alur produk, API, antarmuka, sampai deployment—dengan fokus membuat pengalaman yang sederhana, mudah dipakai, dan stabil.",
+    explore: "Lihat pengalaman saya",
+    conversation: "Diskusikan proyek",
     location: "Bandung, Indonesia",
-    focus: "Antarmuka / Sistem / Produk",
-    scroll: "Gulir untuk menjelajah",
+    focus: "Produk / Web / Software Engineering",
+    scroll: "Gulir untuk lanjut",
   },
   work: {
-    eyebrow: "01 / Karya pilihan",
-    heading: "Karya yang hidup melampaui mockup.",
-    intro: "Pengalaman digital pilihan yang ditampilkan sebagai produk, bukan sekadar gambar.",
+    eyebrow: "02 / Karya pilihan",
+    heading: "Beberapa produk yang pernah saya bantu bangun.",
+    intro:
+      "Pilihan proyek yang bisa saya ceritakan lebih jauh—mulai dari keputusan antarmuka, pendekatan teknis, sampai proses di balik hasil akhirnya.",
     selected: "Karya pilihan",
-    read: "Baca studi kasus",
+    read: "Lihat studi kasus",
   },
   lab: {
-    eyebrow: "02 / Lab antarmuka",
-    heading: "Eksperimen kecil. Perhatian besar pada rasa.",
-    intro: "Studi langsung tentang motion, input, tipografi, dan respons visual.",
-    open: "Buka seluruh lab",
+    eyebrow: "03 / Lab antarmuka",
+    heading: "Ruang untuk mencoba bagaimana antarmuka bergerak dan merespons.",
+    intro:
+      "Eksperimen kecil seputar tipografi, motion, input pointer, dan feedback visual—dibuat untuk belajar, bukan sekadar hiasan.",
+    open: "Lihat semua eksperimen",
   },
   capabilities: {
-    eyebrow: "03 / Yang saya bawa",
-    heading: "Lebih dari daftar teknologi.",
+    eyebrow: "Yang bisa saya bantu",
+    heading: "Cara saya ikut membangun produk.",
     intro:
-      "Spesialisasi frontend dengan jangkauan engineering untuk mengirim produk secara utuh.",
+      "Perhatian utama saya ada di antarmuka, tetapi konteks produk secara utuh membantu saya membuatnya bekerja lebih baik.",
     items: [
       {
-        title: "Keahlian antarmuka",
+        title: "Frontend engineering",
         body:
-          "Layout responsif, desain interaksi, sistem motion, dan sentuhan akhir yang membuat antarmuka terasa disengaja.",
+          "Antarmuka responsif, reusable component, state yang jelas, dan detail interaksi yang tetap konsisten ketika produk berkembang.",
       },
       {
-        title: "Engineering produk",
+        title: "Memahami produk",
         body:
-          "Menerjemahkan tujuan produk menjadi komponen terawat, state yang jelas, dan sistem yang tumbuh bersama tim.",
+          "Memahami alur pengguna dan proses bisnis sebelum menentukan bagaimana solusinya dibangun.",
       },
       {
-        title: "Pengiriman full-stack",
+        title: "Full-stack delivery",
         body:
-          "Menghubungkan antarmuka dengan data, API, dan deployment agar pengalaman bekerja melampaui presentation layer.",
+          "Menghubungkan frontend dengan API, database, autentikasi, testing, dan deployment.",
       },
       {
-        title: "Performa & akses",
+        title: "Kualitas & aksesibilitas",
         body:
-          "Memperlakukan kecepatan, semantik, keyboard, dan reduced motion sebagai bagian desain—bukan pekerjaan belakangan.",
+          "Menjaga performa, aksesibilitas, error state, dan dukungan keyboard sebagai bagian dari pekerjaan utama.",
       },
     ],
   },
   experience: {
-    eyebrow: "04 / Pengalaman",
-    heading: "Pekerjaan di balik antarmuka.",
-    intro:
-      "Kronologi peran, kontribusi, dan konteks produk yang membentuk cara saya membangun.",
-    viewAll: "Lihat seluruh pengalaman",
-    emptyTitle: "Linimasa profesional sedang dirapikan.",
+    eyebrow: "01 / Pengalaman",
+    heading: "Linimasa pengalaman",
+    viewAll: "Lihat perjalanan lengkap",
+    emptyTitle: "Riwayat pengalaman belum tersedia.",
     emptyBody:
-      "Peran, periode, dan kontribusi terverifikasi akan tampil di sini setelah detailnya siap.",
+      "Peran dan kontribusi yang sudah terverifikasi akan ditampilkan setelah detailnya siap.",
     present: "Sekarang",
     relatedWork: "Karya terkait",
-    contribution: "Kontribusi pilihan",
-    stack: "Teknologi",
-    pageEyebrow: "Pengalaman / Linimasa",
-    pageHeading: "Produk selalu dibangun dalam sebuah konteks.",
+    contribution: "Yang saya kerjakan",
+    stack: "Tools & teknologi",
+    pageEyebrow: "Pengalaman / 2022—2026",
+    pageHeading: "Konteks di balik setiap pekerjaan.",
     pageIntro:
-      "Melihat lebih dekat tim, tanggung jawab, dan keputusan teknis di balik setiap karya.",
-    back: "Kembali ke ringkasan",
-    workCta: "Jelajahi karya pilihan",
-    contactCta: "Mulai percakapan",
+      "Rangkuman tentang tim, sistem, dan tanggung jawab yang membentuk cara saya mengerjakan produk saat ini.",
+    back: "Kembali ke homepage",
+    workCta: "Lihat karya pilihan",
+    contactCta: "Diskusikan proyek",
   },
   about: {
-    eyebrow: "05 / Tentang",
-    location: "Berbasis di Bandung / Indonesia",
-    heading: "Penasaran pada seluruh stack. Sangat teliti pada antarmuka.",
+    eyebrow: "04 / Tentang",
+    location: "Bandung / Indonesia",
+    heading: "Saya peduli pada cara produk bekerja, bukan hanya tampilannya.",
     body:
-      "Saya menikmati proses mengubah ide produk yang masih samar menjadi pengalaman yang jelas dan responsif. Browser adalah ruang paling ekspresif bagi saya, sementara pemahaman full-stack membantu saya mengambil keputusan produk yang lebih baik dari awal hingga akhir.",
-    hello: "Mari berbicara",
+      "Pekerjaan saya biasanya berada di antara kebutuhan produk, sistem teknis, dan antarmuka yang dipakai pengguna. Saya suka membuat hubungan itu terasa jelas, praktis, dan bisa diandalkan.",
+    hello: "Kirim pesan",
     principles: [
       {
-        title: "Mulai dari perjalanan pengguna.",
-        body: "Interaksi dan hierarki harus membuat langkah berikutnya terasa jelas.",
+        title: "Pahami alurnya dulu.",
+        body:
+          "Software yang baik dimulai dari alur kerja nyata, batasan, dan orang yang akan menggunakannya.",
       },
       {
-        title: "Bangun sistemnya, lalu momennya.",
-        body: "Fondasi yang dapat digunakan ulang membuat detail ekspresif lebih mudah dipertahankan.",
+        title: "Buat jalur utama tetap jelas.",
+        body: "Pengguna seharusnya selalu tahu langkah berikutnya.",
       },
       {
-        title: "Polish juga berarti performa.",
-        body: "Antarmuka yang indah harus tetap cepat, inklusif, dan tangguh.",
+        title: "Bangun untuk pemakaian nyata.",
+        body:
+          "Produk yang baik perlu cepat, mudah diakses, tahan masalah, dan mudah dirawat.",
       },
     ],
   },
   contact: {
-    eyebrow: "06 / Kontak",
-    heading: "Punya sesuatu yang menarik untuk dibuat?",
-    subheading: "Mari mengubahnya menjadi antarmuka yang ingin terus digunakan orang.",
+    eyebrow: "05 / Kontak",
+    heading: "Punya masalah produk yang menarik untuk diselesaikan?",
+    subheading:
+      "Ceritakan apa yang sedang Anda bangun, bagian mana yang masih terasa rumit, dan hasil seperti apa yang ingin dicapai.",
     preferEmail: "Lebih nyaman lewat email?",
   },
   form: {
@@ -454,41 +461,44 @@ const id: Dictionary = {
     email: "Email",
     emailPlaceholder: "anda@perusahaan.com",
     message: "Pesan",
-    messagePlaceholder: "Ceritakan sedikit tentang peluang atau proyeknya.",
+    messagePlaceholder:
+      "Ceritakan sedikit tentang produk, tim, atau posisi yang sedang Anda tawarkan.",
     send: "Kirim pesan",
     sending: "Mengirim…",
-    success: "Pesan terkirim. Saya akan segera menghubungi Anda.",
-    error: "Terjadi kendala. Silakan hubungi saya langsung lewat email.",
+    success:
+      "Terima kasih, pesannya sudah terkirim. Saya akan membalas secepatnya.",
+    error:
+      "Pesannya belum berhasil terkirim. Anda tetap bisa menghubungi saya langsung lewat email.",
   },
   footer: {
-    role: "Full-stack developer dengan spesialisasi frontend",
+    role: "Software Engineer",
     email: "Email",
   },
   labPage: {
     eyebrow: "Lab Antarmuka / 01—04",
-    headingBefore: "Eksperimen untuk bagian antarmuka yang bisa",
+    headingBefore: "Eksperimen kecil untuk interaksi yang bisa",
     headingEmphasis: "dirasakan",
     intro:
-      "Studi kecil dan langsung, tempat motion serta input diperlakukan sebagai material produk—bukan dekorasi.",
-    back: "Kembali ke ringkasan",
-    enough: "Cukup bereksperimen.",
-    seeWork: "Lihat karya produk",
+      "Kumpulan studi langsung seputar motion, input, tipografi, dan feedback. Setiap eksperimen menguji satu ide interaksi kecil langsung di browser.",
+    back: "Kembali ke homepage",
+    enough: "Ingin melihat hasil produk?",
+    seeWork: "Lihat karya pilihan",
   },
   caseStudy: {
     eyebrow: "Studi kasus",
-    visit: "Kunjungi website",
+    visit: "Buka website",
     role: "Peran",
     year: "Tahun",
     stack: "Teknologi",
     gallery: "Galeri",
     outcome: "Hasil",
-    next: "Proyek berikutnya",
+    next: "Studi kasus berikutnya",
     sections: "Bagian studi kasus",
     notFoundEyebrow: "404 / Proyek tidak ditemukan",
-    notFoundHeading: "Studi kasus ini tidak ada di dalam arsip.",
+    notFoundHeading: "Studi kasus ini tidak tersedia di portfolio.",
     returnWork: "Kembali ke karya pilihan",
   },
-  cursor: { view: "Lihat" },
+  cursor: { view: "Buka" },
 }
 
 const dictionaries: Record<Locale, Dictionary> = { en, id }

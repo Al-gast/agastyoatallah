@@ -5,9 +5,11 @@ export const projects: Project[] = [
     slug: "senja-solusi",
     title: "Senja Solusi",
     summary: {
-      en: "A one-page website built around a bold creative-company identity and the promise of bringing ideas to life.",
-      id: "Website satu halaman dengan identitas perusahaan kreatif yang berani dan janji untuk menghidupkan berbagai ide.",
+      en: "A focused company website where oversized typography, motion, and a dark visual system carry the brand.",
+      id: "Website perusahaan yang mengandalkan tipografi besar, motion, dan visual gelap untuk membawa karakter brand.",
     },
+    role: { en: "Frontend Developer", id: "Frontend Developer" },
+    stack: ["Vue.js", "Tailwind CSS"],
     liveUrl: "https://senja.co.uk",
     cover: {
       src: "/senja.png",
@@ -35,23 +37,23 @@ export const projects: Project[] = [
       {
         label: { en: "Overview", id: "Ringkasan" },
         title: {
-          en: "A loud digital entrance for a creative company.",
-          id: "Pintu masuk digital yang berani untuk perusahaan kreatif.",
+          en: "A concise site with a strong first impression.",
+          id: "Website ringkas dengan kesan pertama yang kuat.",
         },
         body: {
-          en: "The experience is built around a single, high-impact landing page where typography carries the identity and guides visitors through the company story.",
-          id: "Pengalaman dibangun melalui landing page berdampak tinggi, dengan tipografi sebagai pembawa identitas sekaligus pemandu cerita perusahaan.",
+          en: "The website introduces Senja Solutions through one focused flow. Large type leads the hierarchy, while motion keeps the page lively without making the content harder to follow.",
+          id: "Website ini memperkenalkan Senja Solutions melalui satu alur yang fokus. Tipografi besar membentuk hierarki, sementara motion membuat halaman tetap hidup tanpa mengganggu isi utamanya.",
         },
       },
       {
         label: { en: "Interface direction", id: "Arah antarmuka" },
         title: {
-          en: "Type becomes the primary visual system.",
-          id: "Tipografi menjadi sistem visual utama.",
+          en: "Let typography do most of the talking.",
+          id: "Membiarkan tipografi menjadi elemen utama.",
         },
         body: {
-          en: "Oversized headlines, a restrained black canvas, and a focused orange accent create hierarchy without relying on a dense collection of interface components.",
-          id: "Headline besar, kanvas hitam yang tenang, dan aksen jingga terarah membentuk hierarki tanpa bergantung pada kumpulan komponen yang padat.",
+          en: "Oversized headlines, a restrained dark canvas, and a focused orange accent create a clear visual rhythm without relying on a dense set of components.",
+          id: "Headline besar, latar gelap, dan aksen jingga membentuk ritme visual yang jelas tanpa membutuhkan terlalu banyak komponen.",
         },
       },
     ],
@@ -60,9 +62,11 @@ export const projects: Project[] = [
     slug: "noovoleum",
     title: "Noovoleum",
     summary: {
-      en: "A mission-led website explaining how technology and AI support used cooking oil collection from households and small producers.",
-      id: "Website berbasis misi yang menjelaskan peran teknologi dan AI dalam pengumpulan minyak jelantah dari rumah tangga serta produsen kecil.",
+      en: "A responsive product website for Noovoleum's used cooking oil collection ecosystem, built with Vue.js and Tailwind CSS.",
+      id: "Website produk responsif untuk ekosistem pengumpulan minyak jelantah Noovoleum, dibangun dengan Vue.js dan Tailwind CSS.",
     },
+    role: { en: "Frontend Developer", id: "Frontend Developer" },
+    stack: ["Vue.js", "Tailwind CSS", "REST API"],
     liveUrl: "https://www.noovoleum.com/",
     cover: {
       src: "/noovoleum.png",
@@ -90,23 +94,23 @@ export const projects: Project[] = [
       {
         label: { en: "Overview", id: "Ringkasan" },
         title: {
-          en: "Making a circular-energy mission easy to understand.",
-          id: "Membuat misi energi sirkular lebih mudah dipahami.",
+          en: "Explaining a new collection model without making it feel complicated.",
+          id: "Menjelaskan cara pengumpulan baru tanpa membuatnya terasa rumit.",
         },
         body: {
-          en: "The website introduces Noovoleum's used cooking oil collection ecosystem through a direct mission statement, branded illustration, and product-focused storytelling.",
-          id: "Website memperkenalkan ekosistem pengumpulan minyak jelantah Noovoleum melalui pernyataan misi yang langsung, ilustrasi khas, dan cerita yang berfokus pada produk.",
+          en: "The website introduces Noovoleum's used cooking oil collection service through a direct explanation, branded illustrations, and a step-by-step product story.",
+          id: "Website ini memperkenalkan layanan pengumpulan minyak jelantah Noovoleum melalui penjelasan yang langsung, ilustrasi brand, dan alur produk yang bertahap.",
         },
       },
       {
         label: { en: "Interface direction", id: "Arah antarmuka" },
         title: {
-          en: "A visual system rooted in the product mission.",
-          id: "Sistem visual yang berakar pada misi produk.",
+          en: "A friendly visual system for a practical service.",
+          id: "Visual yang ramah untuk layanan yang praktis.",
         },
         body: {
-          en: "Green-led surfaces, large brand moments, and illustrated collection steps connect the interface to sustainability without losing product clarity.",
-          id: "Permukaan hijau, momen brand berskala besar, dan tahapan berilustrasi menghubungkan antarmuka dengan keberlanjutan tanpa mengurangi kejelasan produk.",
+          en: "Green surfaces, clear content blocks, and illustrated collection steps connect the sustainability message to a service people can understand and use.",
+          id: "Warna hijau, pembagian konten yang jelas, dan tahapan berilustrasi menghubungkan pesan keberlanjutan dengan layanan yang mudah dipahami dan digunakan.",
         },
       },
     ],

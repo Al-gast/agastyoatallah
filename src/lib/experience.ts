@@ -6,8 +6,8 @@ export type ExperienceView = {
   id: string
   company: string
   role: string
-  employmentType: string
-  location: string
+  employmentType?: string
+  location?: string
   period: string
   startYear: string
   summary: string
@@ -38,8 +38,10 @@ export function createExperienceViews(
       id: entry.id,
       company: entry.company,
       role: localize(entry.role, locale),
-      employmentType: localize(entry.employmentType, locale),
-      location: localize(entry.location, locale),
+      employmentType: entry.employmentType
+        ? localize(entry.employmentType, locale)
+        : undefined,
+      location: entry.location ? localize(entry.location, locale) : undefined,
       period:
         formatDate(entry.startDate, locale) +
         " — " +

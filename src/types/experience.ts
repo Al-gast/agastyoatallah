@@ -4,8 +4,8 @@ export type Experience = {
   id: string
   company: string
   role: LocalizedText
-  employmentType: LocalizedText
-  location: LocalizedText
+  employmentType?: LocalizedText
+  location?: LocalizedText
   startDate: string
   endDate?: string
   summary: LocalizedText

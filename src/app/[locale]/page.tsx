@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation"
 
 import { AboutSection } from "@/components/sections/home/about-section"
-import { CapabilitiesPreview } from "@/components/sections/home/capabilities-preview"
 import { ContactCta } from "@/components/sections/home/contact-cta"
 import { ExperienceSection } from "@/components/sections/home/experience-section"
 import { HomeHero } from "@/components/sections/home/home-hero"
@@ -22,11 +21,13 @@ export default async function HomePage({
   return (
     <main>
       <HomeHero copy={dictionary.hero} />
+      <ExperienceSection locale={locale} copy={dictionary.experience} />
       <SelectedWork locale={locale} copy={dictionary.work} />
       <LabPreview locale={locale} copy={dictionary.lab} />
-      <CapabilitiesPreview copy={dictionary.capabilities} />
-      <ExperienceSection locale={locale} copy={dictionary.experience} />
-      <AboutSection copy={dictionary.about} />
+      <AboutSection
+        copy={dictionary.about}
+        capabilities={dictionary.capabilities}
+      />
       <ContactCta copy={dictionary} />
     </main>
   )
